@@ -1,0 +1,137 @@
+.container {
+    display: flex;
+    background-color: #f0f0f0;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.list_products {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 10px;
+}
+
+.list_items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Alinha verticalmente */
+    align-items: center;
+    /* Centraliza horizontalmente */
+    padding: 20px;
+    width: 220px;
+    height: 400px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    /* Garante centralização do texto */
+}
+
+.list_items:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.list_items img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    padding: 10px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    /* Centraliza a imagem */
+}
+
+h2 {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+    flex-grow: 1;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 17px;
+    color: #333;
+}
+
+.link:visited {
+    color: #333;
+}
+
+.btn_info {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    background-color: #006400;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.btn_info:hover {
+    background-color: #004d00;
+}
+
+/* Media query for tablet screens */
+@media (max-width: 768px) {
+    .list_products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list_items {
+        width: 90%;
+        max-width: 300px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .list_items img {
+        width: 140px;
+        height: 140px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .btn_info {
+        font-size: 14px;
+    }
+}
+
+/* Media query for mobile phones */
+@media (max-width: 480px) {
+    .list_items {
+        width: 100%;
+        max-width: 300px;
+        padding: 15px;
+        height: auto;
+    }
+
+    .list_items img {
+        width: 120px;
+        height: 120px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    .btn_info {
+        font-size: 12px;
+    }
+}

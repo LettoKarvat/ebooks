@@ -1,0 +1,198 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    position: relative;
+    font-family: 'Arial', sans-serif;
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto;
+    /* Adiciona esse estilo para empurrar o conteúdo para a direita */
+    font-size: 1rem;
+    color: #bd0000;
+}
+
+.userGreeting {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.logoutButton {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #d9534f;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.logoutButton:hover {
+    background-color: #c9302c;
+    transform: translateY(-2px);
+}
+
+.logoutButton:active {
+    background-color: #ac2925;
+    transform: translateY(1px);
+}
+
+.authOptions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #bd0000;
+    font-weight: bold;
+    font-family: 'Helvetica', sans-serif;
+}
+
+h1 strong {
+    color: #333;
+}
+
+.authLink,
+.logoutButton {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.authLink {
+    color: #fff;
+    background: linear-gradient(90deg, #ff6a00 0%, #e05200 100%);
+}
+
+.authLink:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 106, 0, 0.3);
+    background: linear-gradient(90deg, #e05200 0%, #ff6a00 100%);
+}
+
+.authLink:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 5px rgba(255, 106, 0, 0.2);
+}
+
+.loginForm {
+    padding: 1.5rem;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    /* Centraliza o conteúdo */
+}
+
+.inputGroup {
+    margin-bottom: 1rem;
+}
+
+.inputGroup label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.inputGroup input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.errorMessage {
+    color: red;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.switchFormText {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: #666;
+}
+
+.switchFormButton {
+    background: none;
+    border: none;
+    color: #0073e6;
+    font-size: 0.875rem;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 0.25rem;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.switchFormButton:hover {
+    color: #0051a3;
+}
+
+.login_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    padding: 2rem;
+}
+
+.submitButton {
+    width: 100%;
+    padding: 0.75rem;
+    background: linear-gradient(90deg, #0073e6 0%, #0051a3 100%);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 115, 230, 0.2);
+    margin-bottom: 1rem;
+    /* Adiciona espaço abaixo do botão */
+}
+
+.submitButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.submitButton:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 115, 230, 0.3);
+    background: linear-gradient(90deg, #0051a3 0%, #0073e6 100%);
+}
+
+.submitButton:active:not(:disabled) {
+    transform: translateY(1px);
+    box-shadow: 0 2px 5px rgba(0, 115, 230, 0.2);
+}

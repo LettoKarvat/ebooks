@@ -1,0 +1,97 @@
+/* Ajustes Globais */
+body {
+    font-family: 'Georgia', serif;
+    /* Fonte que transmite seriedade */
+    background-color: #f0f0f0;
+    /* Fundo neutro */
+    color: #333;
+    /* Texto com cor mais escura */
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #ffdddd;
+    /* Cor vermelha escura que remete a seriedade e política */
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.header strong {
+    color: #FFD700;
+    /* Destaque em dourado para o subtítulo */
+}
+
+/* Container Principal */
+.container {
+    padding: 2rem;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos Itens da Lista de Produtos */
+.list_products {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.list_items {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.list_items:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo dos Links e Botões */
+.link {
+    text-decoration: none;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.4rem;
+    color: #222;
+    margin: 0.5rem 0;
+}
+
+.btn_info {
+    background-color: #006400;
+    /* Cor verde escura para um tom mais sério */
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn_info:hover {
+    background-color: #004d00;
+    /* Escurecer o botão ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .list_products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list_items {
+        width: 100%;
+    }
+}

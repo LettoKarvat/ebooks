@@ -1,0 +1,135 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #bd0000;
+}
+
+.authOptions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.authLink {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #15b9c8;
+    font-weight: bold;
+}
+
+.authLink:hover {
+    color: #004d00;
+}
+
+.loginForm {
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+}
+
+.inputGroup {
+    margin-bottom: 1rem;
+}
+
+.inputGroup label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.inputGroup input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.errorMessage {
+    color: red;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.login_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    padding: 2rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.submitButton {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #000c64;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submitButton:disabled {
+    background-color: #ccc;
+}
+
+.submitButton:hover:not(:disabled) {
+    background-color: #11004d;
+}
+
+.closeButton {
+    position: absolute;
+    top: -0.5rem;
+    /* Ajusta a posição para que fique colado no topo do formulário */
+    right: -0.5rem;
+    /* Ajusta a posição para que fique colado à direita do formulário */
+    background: #f8f8f8;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+    border-radius: 50%;
+    /* Torna o botão circular */
+    padding: 0.25rem;
+    /* Adiciona um pouco de espaço ao redor do "X" */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Adiciona uma leve sombra para destaque */
+}
+
+.closeButton:hover {
+    color: #000;
+    background-color: #e0e0e0;
+    /* Muda o fundo ao passar o mouse */
+}
